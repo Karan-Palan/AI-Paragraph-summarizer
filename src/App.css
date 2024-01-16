@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
-*/
+/* Global Styles */
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  background-color: #1a1a2e; /* Dark purple background */
+  color: #d6d6d6; /* Light text color */
+}
+
+/* Main Container Styles */
 
 .main {
   width: 100vw;
@@ -17,7 +23,7 @@
 }
 
 .main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+  background: radial-gradient(circle, rgba(26, 26, 46, 0) 0, #1a1a2e 100%);
   position: absolute;
   content: "";
   z-index: 2;
@@ -44,16 +50,14 @@
   width: 100%;
   max-width: 640px;
   background-image: radial-gradient(
-      at 27% 37%,
-      hsla(215, 98%, 61%, 1) 0px,
-      transparent 0%
+      at 27% 37%, hsla(260, 100%, 40%, 1) 0px, transparent 0%
     ),
-    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+    radial-gradient(at 97% 21%, hsla(240, 100%, 30%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(260, 100%, 40%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(240, 100%, 35%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(220, 60%, 40%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(240, 70%, 45%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(250, 70%, 50%, 1) 0px, transparent 50%);
   position: absolute;
   content: "";
   width: 100%;
@@ -80,7 +84,7 @@
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-white sm:text-6xl text-center;
 }
 
 .orange_gradient {
